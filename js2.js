@@ -86,13 +86,13 @@ function calculoConsumo(){
 	var consumodiacam = ((((ncam.value)*(potcam.value)*24)/1000).toFixed(1));
 	document.getElementById("potcamdia").innerHTML = consumodiacam;
 
-	var consumomescam = (((((ncam.value)*(potcam.value)*24)*48)/1000).toFixed(1));
+	var consumomescam = (((((ncam.value)*(potcam.value)*24)*31)/1000).toFixed(1));
 	document.getElementById("petmesdia").innerHTML = consumomescam;
 
 	var consumodiadvr = (((((ndvr.value)*(potdvr.value)*24)/1000).toFixed(1)));
 	document.getElementById("potdvrdia").innerHTML = consumodiadvr;
 
-	var consumomesdvr = ((((((ndvr.value)*(potdvr.value)*24)*48)/1000).toFixed(1)));
+	var consumomesdvr = ((((((ndvr.value)*(potdvr.value)*24)*31)/1000).toFixed(1)));
 	document.getElementById("potdvrmes").innerHTML = consumomesdvr;
 
 	var pottotaldia = ((parseFloat(consumodiacam))+(parseFloat(consumodiadvr)));
